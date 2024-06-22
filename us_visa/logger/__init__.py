@@ -7,8 +7,9 @@ from datetime import datetime
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 
 log_dir = 'logs'
+root = fr"C:\Users\pramod\Desktop\INURON\MLOPS_DS_Project\Visa_prediction\US-Visa-Approval-Prediction"
 
-logs_path = os.path.join(from_root(), log_dir, LOG_FILE)
+logs_path = os.path.join(root, log_dir, LOG_FILE)
 
 os.makedirs(log_dir, exist_ok=True)
 
